@@ -1,0 +1,15 @@
+13:25:35 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+Finished building: ../GestionImmatriculations.cpp
+ 
+Building target: tp3_main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/projet_session/eclipse/tp3/Debug" -o "tp3_main"  ./GestionImmatriculations.o   -ltp3
+Finished building target: tp3_main
+ 
+
+13:25:36 Build Finished (took 330ms)
+

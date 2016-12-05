@@ -1,0 +1,145 @@
+/**
+* \file GestionImmatriculations.cpp
+* \brief Petit programme interactif de gestion de vehicule
+* \author Antoine Bouchard
+* \version 0.0.1-alpha
+* \date 10/19/2016
+*/
+
+#include <iostream>
+#include <vector>
+#include <map>
+#include "vehiculePromenade.h"
+#include "validation/validationFormat.h"
+
+
+using namespace std;
+using namespace tp;
+
+/**
+ * \brief Obtient ("get") le choix du menu selectione
+ */
+int getInput();
+
+
+
+int main() {
+	string nom;
+	string prenom;
+	string niv1;
+	string niv2;
+	string immat1;
+
+	cout << "Votre nom: "<<endl;
+	cin >> nom;
+	cout << "Votre prenom: "<<endl;
+	cin >> prenom;
+
+	cout<< "Information pour le vehicule de promenade: "<<endl;
+	cout << "Entrez le NIV : "<< endl;
+	cin >> niv1;
+	if(!util::validerNiv(niv1)){
+		cout << "Niv invalide veuillez recommencer"<< endl;
+		return 1;
+	}
+	cout << "Entrez le numero d'immatriculation: "<<endl;
+	cin >> immat1;
+
+	cout << "Entrez le nombre de place (superieure a 0): "<<endl;
+		cin >> immat1;
+
+	if(!util::validationImmatriculationPromenade(immat1)){
+		cout << "Immatriculation invalide veuillez recommencer"<< endl;
+		return 1;
+	}
+	vehicule::VehiculePromenade vehiculePromenade(niv1, immat1);
+
+    return 0;
+}
+
+void afficherMenu() {
+    cout << "Choisir parmi les option suivante: " << endl;
+    cout << "1) Ajout de vehicules" << endl;
+    cout << "2) Modifier un vehicule " << endl;
+    cout << "3) Supprimer un vehicule " << endl;
+    cout << "4) List des vehicules " << endl;
+    cout << "5) DEMO " << endl;
+    cout << "6) Quitter" << endl;
+    cout << " ---------------------" << endl;
+    cout << "Choix: ";
+}
+
+int getInput() {
+    int choix;
+    cin >> choix;
+    cin.ignore();
+    return choix;
+}
+
+//Vehicule creeVehicule() {
+//    string vin;
+//    string plaque;
+//    demandeInfoVehicule(vin, plaque);
+//
+//    return Vehicule(vin, plaque) ;
+//}
+//
+//void demandeInfoVehicule(string &p_niv, string &p_plaque) {
+//    cout << "Veuillez entrez le numero d'identification du vehicule (en majuscule): " << endl;
+//    cin >> p_niv;
+//    cin.ignore();
+//    cout << "Veuillez entrez le numero de plaque d'imatriculation du vehicule: " << endl;
+//    getline(cin, p_plaque);
+//}
+//
+//void afficherVehicules(vector<Vehicule> &p_vehicule) {
+//    for (int i = 0; i < p_vehicule.size(); ++i) {
+//        cout << i << ") \n" << p_vehicule[i].reqVehiculeFormate() << endl;
+//    }
+//    cout << "\n\n";
+//}
+//
+//void modifieVehicule(vector<Vehicule> &p_vehicules) {
+//    int i = 0;
+//    string nouvellePlaque;
+//    cout << "Entrer le numero du vehicule à modifier: ";
+//    cin >> i;
+//    cout << "Entrez le nouveau numero de plaque d'immatriculation: ";
+//    cin >> nouvellePlaque;
+//    p_vehicules[i].asgImmatriculation(nouvellePlaque);
+//}
+//
+//
+//void modeDemo() {
+//    Vehicule vehicule = creeVehicule();
+//    string nouvellePlaque;
+//    cout << "Donnee entree: " << endl;
+//    cout << "----------------" << endl;
+//    cout << vehicule.reqVehiculeFormate();
+//    cout << "----------------" << endl;
+//
+//    cout << " \n--- Modification de la plaque --- " << endl;
+//    cout << "Entree une nouvelle plaque: ";
+//    getline(cin, nouvellePlaque);
+//    try {
+//        vehicule.asgImmatriculation(nouvellePlaque);
+//        cout << " --- Plaque mise a jour --- " << endl;
+//        cout << vehicule.reqVehiculeFormate();
+//
+//        cout << " \n--- Modification de la plaque --- " << endl;
+//        cout << "Entree une nouvelle plaque: ";
+//        getline(cin, nouvellePlaque);
+//        vehicule.asgImmatriculation(nouvellePlaque);
+//        cout << " --- Plaque mise a jour --- " << endl;
+//        cout << vehicule.reqVehiculeFormate();
+//    } catch (exception &e) {
+//        cout << "\nNumero d'immatriculation invalide.\n\n";
+//        cout << "Appuyer sur enter pour continuer..." << endl;
+//        cin.ignore();
+//    }
+//    cout << "Retour Au menu principale \n\n" << endl;
+//
+//
+//}
+//
+//

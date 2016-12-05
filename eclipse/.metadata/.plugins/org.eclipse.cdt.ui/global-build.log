@@ -1,0 +1,453 @@
+12:50:41 **** Build of configuration Debug for project TP3gtest ****
+make all 
+Building file: ../CamionTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"CamionTesteur.d" -MT"CamionTesteur.o" -o "CamionTesteur.o" "../CamionTesteur.cpp"
+../CamionTesteur.cpp:21:18: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     string niv = "S26F84ED0DM538541";
+                  ^
+../CamionTesteur.cpp:22:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     string immat = "L000012";
+                    ^
+../CamionTesteur.cpp:23:17: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int poids = 3004;
+                 ^
+../CamionTesteur.cpp:24:21: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int nbEssieux = 2;
+                     ^
+../CamionTesteur.cpp:25:28: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     double tarif2Essieux = 556.50;
+                            ^
+Finished building: ../CamionTesteur.cpp
+ 
+Building file: ../ProprietaireTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ProprietaireTesteur.d" -MT"ProprietaireTesteur.o" -o "ProprietaireTesteur.o" "../ProprietaireTesteur.cpp"
+../ProprietaireTesteur.cpp:40:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const string t_nom = "Doe";
+                          ^
+../ProprietaireTesteur.cpp:41:29: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     const string t_prenom = "John";
+                             ^
+Finished building: ../ProprietaireTesteur.cpp
+ 
+Building file: ../ValidationFormatTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"ValidationFormatTesteur.d" -MT"ValidationFormatTesteur.o" -o "ValidationFormatTesteur.o" "../ValidationFormatTesteur.cpp"
+../ValidationFormatTesteur.cpp: In member function ‘virtual void ValidationFormatTest_validationImmatriculationCamionEstValide_Test::TestBody()’:
+../ValidationFormatTesteur.cpp:69:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < immatCamion.size(); i++) {
+                       ^
+../ValidationFormatTesteur.cpp: In member function ‘virtual void ValidationFormatTest_validationImmatriculationPromenadeEstValide_Test::TestBody()’:
+../ValidationFormatTesteur.cpp:75:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < immatPromenade.size(); i++) {
+                       ^
+../ValidationFormatTesteur.cpp: In member function ‘virtual void ValidationFormatTest_validationImmatriculationCamionEstInvalide_Test::TestBody()’:
+../ValidationFormatTesteur.cpp:81:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < immatCamionInvalide.size(); i++) {
+                       ^
+../ValidationFormatTesteur.cpp: In member function ‘virtual void ValidationFormatTest_validationImmatriculationPromenadeEstInvalide_Test::TestBody()’:
+../ValidationFormatTesteur.cpp:88:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < immatPromenadeInvalide.size(); i++) {
+                       ^
+Finished building: ../ValidationFormatTesteur.cpp
+ 
+Building file: ../VehiculePromenadeTesteur.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"VehiculePromenadeTesteur.d" -MT"VehiculePromenadeTesteur.o" -o "VehiculePromenadeTesteur.o" "../VehiculePromenadeTesteur.cpp"
+../VehiculePromenadeTesteur.cpp:34:20: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     string t_niv = "S26F84ED0DM538541";
+                    ^
+../VehiculePromenadeTesteur.cpp:35:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     string t_immat = "AAA 000";
+                      ^
+../VehiculePromenadeTesteur.cpp:36:22: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11
+     int t_nbPlaces = 2;
+                      ^
+Finished building: ../VehiculePromenadeTesteur.cpp
+ 
+Building file: ../main.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"main.d" -MT"main.o" -o "main.o" "../main.cpp"
+Finished building: ../main.cpp
+ 
+Building target: TP3gtest
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/projet_session/eclipse/tp3/Debug" -o "TP3gtest"  ./CamionTesteur.o ./ProprietaireTesteur.o ./ValidationFormatTesteur.o ./VehiculePromenadeTesteur.o ./main.o   -ltp3 -lgtest_main -lgtest -lpthread
+Finished building target: TP3gtest
+ 
+12:50:49 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:07:55 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:07:55 **** Incremental Build of configuration Debug for project tp3 ****
+make all 
+make: rien à faire pour « all ».
+13:07:55 **** Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+../GestionImmatriculations.cpp:17:17: error: ‘tp’ is not a namespace-name
+ using namespace tp;
+                 ^
+../GestionImmatriculations.cpp:17:19: error: expected namespace-name before ‘;’ token
+ using namespace tp;
+                   ^
+../GestionImmatriculations.cpp:39:1: error: ‘Vehicule’ does not name a type
+ Vehicule creeVehicule();
+ ^
+../GestionImmatriculations.cpp:44:31: error: ‘Vehicule’ was not declared in this scope
+ void afficherVehicules(vector<Vehicule> &p_vehicule);
+                               ^
+../GestionImmatriculations.cpp:44:31: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:44:39: error: template argument 1 is invalid
+ void afficherVehicules(vector<Vehicule> &p_vehicule);
+                                       ^
+../GestionImmatriculations.cpp:44:39: error: template argument 2 is invalid
+../GestionImmatriculations.cpp:50:29: error: ‘Vehicule’ was not declared in this scope
+ void modifieVehicule(vector<Vehicule> &p_vehicules);
+                             ^
+../GestionImmatriculations.cpp:50:29: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:50:37: error: template argument 1 is invalid
+ void modifieVehicule(vector<Vehicule> &p_vehicules);
+                                     ^
+../GestionImmatriculations.cpp:50:37: error: template argument 2 is invalid
+../GestionImmatriculations.cpp: In function ‘int main()’:
+../GestionImmatriculations.cpp:83:60: error: no matching function for call to ‘vehicule::VehiculePromenade::VehiculePromenade(std::__cxx11::string&, std::__cxx11::string&)’
+  vehicule::VehiculePromenade vehiculePromenade(niv1, immat1);
+                                                            ^
+In file included from ../GestionImmatriculations.cpp:12:0:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const string&, const string&, int)
+         VehiculePromenade(const std::string &p_niv, const std::string &p_immatriculation, int p_nbPlaces);
+         ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note:   candidate expects 3 arguments, 2 provided
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const vehicule::VehiculePromenade&)
+     class VehiculePromenade : public Vehicule {
+           ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note:   candidate expects 1 argument, 2 provided
+../GestionImmatriculations.cpp: At global scope:
+../GestionImmatriculations.cpp:107:1: error: ‘Vehicule’ does not name a type
+ Vehicule creeVehicule() {
+ ^
+../GestionImmatriculations.cpp:123:31: error: ‘Vehicule’ was not declared in this scope
+ void afficherVehicules(vector<Vehicule> &p_vehicule) {
+                               ^
+../GestionImmatriculations.cpp:123:31: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:123:39: error: template argument 1 is invalid
+ void afficherVehicules(vector<Vehicule> &p_vehicule) {
+                                       ^
+../GestionImmatriculations.cpp:123:39: error: template argument 2 is invalid
+../GestionImmatriculations.cpp: In function ‘void afficherVehicules(int&)’:
+../GestionImmatriculations.cpp:124:36: error: request for member ‘size’ in ‘p_vehicule’, which is of non-class type ‘int’
+     for (int i = 0; i < p_vehicule.size(); ++i) {
+                                    ^
+../GestionImmatriculations.cpp:125:44: error: invalid types ‘int[int]’ for array subscript
+         cout << i << ") \n" << p_vehicule[i].reqVehiculeFormate() << endl;
+                                            ^
+../GestionImmatriculations.cpp: At global scope:
+../GestionImmatriculations.cpp:130:29: error: ‘Vehicule’ was not declared in this scope
+ void modifieVehicule(vector<Vehicule> &p_vehicules) {
+                             ^
+../GestionImmatriculations.cpp:130:29: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:130:37: error: template argument 1 is invalid
+ void modifieVehicule(vector<Vehicule> &p_vehicules) {
+                                     ^
+../GestionImmatriculations.cpp:130:37: error: template argument 2 is invalid
+../GestionImmatriculations.cpp: In function ‘void modifieVehicule(int&)’:
+../GestionImmatriculations.cpp:137:18: error: invalid types ‘int[int]’ for array subscript
+     p_vehicules[i].asgImmatriculation(nouvellePlaque);
+                  ^
+../GestionImmatriculations.cpp: In function ‘void modeDemo()’:
+../GestionImmatriculations.cpp:142:5: error: ‘Vehicule’ was not declared in this scope
+     Vehicule vehicule = creeVehicule();
+     ^
+../GestionImmatriculations.cpp:142:5: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:146:21: error: expected primary-expression before ‘.’ token
+     cout << vehicule.reqVehiculeFormate();
+                     ^
+../GestionImmatriculations.cpp:153:17: error: expected primary-expression before ‘.’ token
+         vehicule.asgImmatriculation(nouvellePlaque);
+                 ^
+../GestionImmatriculations.cpp:155:25: error: expected primary-expression before ‘.’ token
+         cout << vehicule.reqVehiculeFormate();
+                         ^
+../GestionImmatriculations.cpp:160:17: error: expected primary-expression before ‘.’ token
+         vehicule.asgImmatriculation(nouvellePlaque);
+                 ^
+../GestionImmatriculations.cpp:162:25: error: expected primary-expression before ‘.’ token
+         cout << vehicule.reqVehiculeFormate();
+                         ^
+make: *** [GestionImmatriculations.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « GestionImmatriculations.o » a échouée
+13:08:18 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:08:18 **** Incremental Build of configuration Debug for project tp3 ****
+make all 
+make: rien à faire pour « all ».
+13:08:18 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+../GestionImmatriculations.cpp:17:17: error: ‘tp’ is not a namespace-name
+ using namespace tp;
+                 ^
+../GestionImmatriculations.cpp:17:19: error: expected namespace-name before ‘;’ token
+ using namespace tp;
+                   ^
+../GestionImmatriculations.cpp:39:1: error: ‘Vehicule’ does not name a type
+ Vehicule creeVehicule();
+ ^
+../GestionImmatriculations.cpp:44:31: error: ‘Vehicule’ was not declared in this scope
+ void afficherVehicules(vector<Vehicule> &p_vehicule);
+                               ^
+../GestionImmatriculations.cpp:44:31: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:44:39: error: template argument 1 is invalid
+ void afficherVehicules(vector<Vehicule> &p_vehicule);
+                                       ^
+../GestionImmatriculations.cpp:44:39: error: template argument 2 is invalid
+../GestionImmatriculations.cpp:50:29: error: ‘Vehicule’ was not declared in this scope
+ void modifieVehicule(vector<Vehicule> &p_vehicules);
+                             ^
+../GestionImmatriculations.cpp:50:29: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:50:37: error: template argument 1 is invalid
+ void modifieVehicule(vector<Vehicule> &p_vehicules);
+                                     ^
+../GestionImmatriculations.cpp:50:37: error: template argument 2 is invalid
+../GestionImmatriculations.cpp: In function ‘int main()’:
+../GestionImmatriculations.cpp:83:62: error: no matching function for call to ‘vehicule::VehiculePromenade::VehiculePromenade(std::__cxx11::string*, std::__cxx11::string*)’
+  vehicule::VehiculePromenade vehiculePromenade(&niv1, &immat1);
+                                                              ^
+In file included from ../GestionImmatriculations.cpp:12:0:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const string&, const string&, int)
+         VehiculePromenade(const std::string &p_niv, const std::string &p_immatriculation, int p_nbPlaces);
+         ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note:   candidate expects 3 arguments, 2 provided
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const vehicule::VehiculePromenade&)
+     class VehiculePromenade : public Vehicule {
+           ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note:   candidate expects 1 argument, 2 provided
+../GestionImmatriculations.cpp: At global scope:
+../GestionImmatriculations.cpp:107:1: error: ‘Vehicule’ does not name a type
+ Vehicule creeVehicule() {
+ ^
+../GestionImmatriculations.cpp:123:31: error: ‘Vehicule’ was not declared in this scope
+ void afficherVehicules(vector<Vehicule> &p_vehicule) {
+                               ^
+../GestionImmatriculations.cpp:123:31: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:123:39: error: template argument 1 is invalid
+ void afficherVehicules(vector<Vehicule> &p_vehicule) {
+                                       ^
+../GestionImmatriculations.cpp:123:39: error: template argument 2 is invalid
+../GestionImmatriculations.cpp: In function ‘void afficherVehicules(int&)’:
+../GestionImmatriculations.cpp:124:36: error: request for member ‘size’ in ‘p_vehicule’, which is of non-class type ‘int’
+     for (int i = 0; i < p_vehicule.size(); ++i) {
+                                    ^
+../GestionImmatriculations.cpp:125:44: error: invalid types ‘int[int]’ for array subscript
+         cout << i << ") \n" << p_vehicule[i].reqVehiculeFormate() << endl;
+                                            ^
+../GestionImmatriculations.cpp: At global scope:
+../GestionImmatriculations.cpp:130:29: error: ‘Vehicule’ was not declared in this scope
+ void modifieVehicule(vector<Vehicule> &p_vehicules) {
+                             ^
+../GestionImmatriculations.cpp:130:29: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:130:37: error: template argument 1 is invalid
+ void modifieVehicule(vector<Vehicule> &p_vehicules) {
+subdir.mk:18 : la recette pour la cible « GestionImmatriculations.o » a échouée
+                                     ^
+../GestionImmatriculations.cpp:130:37: error: template argument 2 is invalid
+../GestionImmatriculations.cpp: In function ‘void modifieVehicule(int&)’:
+../GestionImmatriculations.cpp:137:18: error: invalid types ‘int[int]’ for array subscript
+     p_vehicules[i].asgImmatriculation(nouvellePlaque);
+                  ^
+../GestionImmatriculations.cpp: In function ‘void modeDemo()’:
+../GestionImmatriculations.cpp:142:5: error: ‘Vehicule’ was not declared in this scope
+     Vehicule vehicule = creeVehicule();
+     ^
+../GestionImmatriculations.cpp:142:5: note: suggested alternative:
+In file included from /home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:12:0,
+                 from ../GestionImmatriculations.cpp:12:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehicule.h:20:11: note:   ‘vehicule::Vehicule’
+     class Vehicule {
+           ^
+../GestionImmatriculations.cpp:146:21: error: expected primary-expression before ‘.’ token
+     cout << vehicule.reqVehiculeFormate();
+                     ^
+../GestionImmatriculations.cpp:153:17: error: expected primary-expression before ‘.’ token
+         vehicule.asgImmatriculation(nouvellePlaque);
+                 ^
+../GestionImmatriculations.cpp:155:25: error: expected primary-expression before ‘.’ token
+         cout << vehicule.reqVehiculeFormate();
+                         ^
+../GestionImmatriculations.cpp:160:17: error: expected primary-expression before ‘.’ token
+         vehicule.asgImmatriculation(nouvellePlaque);
+                 ^
+../GestionImmatriculations.cpp:162:25: error: expected primary-expression before ‘.’ token
+         cout << vehicule.reqVehiculeFormate();
+                         ^
+make: *** [GestionImmatriculations.o] Erreur 1
+13:09:02 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:09:02 **** Incremental Build of configuration Debug for project tp3 ****
+make all 
+make: rien à faire pour « all ».
+13:09:02 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+../GestionImmatriculations.cpp:17:17: error: ‘tp’ is not a namespace-name
+ using namespace tp;
+                 ^
+../GestionImmatriculations.cpp:17:19: error: expected namespace-name before ‘;’ token
+ using namespace tp;
+                   ^
+../GestionImmatriculations.cpp: In function ‘int main()’:
+../GestionImmatriculations.cpp:52:62: error: no matching function for call to ‘vehicule::VehiculePromenade::VehiculePromenade(std::__cxx11::string*, std::__cxx11::string*)’
+  vehicule::VehiculePromenade vehiculePromenade(&niv1, &immat1);
+                                                              ^
+In file included from ../GestionImmatriculations.cpp:12:0:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const string&, const string&, int)
+         VehiculePromenade(const std::string &p_niv, const std::string &p_immatriculation, int p_nbPlaces);
+         ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note:   candidate expects 3 arguments, 2 provided
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const vehicule::VehiculePromenade&)
+     class VehiculePromenade : public Vehicule {
+           ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note:   candidate expects 1 argument, 2 provided
+make: *** [GestionImmatriculations.o] Erreur 1
+subdir.mk:18 : la recette pour la cible « GestionImmatriculations.o » a échouée
+13:09:14 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:09:14 **** Incremental Build of configuration Debug for project tp3 ****
+make all 
+make: rien à faire pour « all ».
+13:09:14 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+../GestionImmatriculations.cpp:17:17: error: ‘tp’ is not a namespace-name
+ using namespace tp;
+                 ^
+../GestionImmatriculations.cpp:17:19: error: expected namespace-name before ‘;’ token
+ using namespace tp;
+                   ^
+../GestionImmatriculations.cpp: In function ‘int main()’:
+../GestionImmatriculations.cpp:52:60: error: no matching function for call to ‘vehicule::VehiculePromenade::VehiculePromenade(std::__cxx11::string&, std::__cxx11::string&)’
+  vehicule::VehiculePromenade vehiculePromenade(niv1, immat1);
+                                                            ^
+In file included from ../GestionImmatriculations.cpp:12:0:
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const string&, const string&, int)
+         VehiculePromenade(const std::string &p_niv, const std::string &p_immatriculation, int p_nbPlaces);
+         ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:22:9: note:   candidate expects 3 arguments, 2 provided
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note: candidate: vehicule::VehiculePromenade::VehiculePromenade(const vehicule::VehiculePromenade&)
+     class VehiculePromenade : public Vehicule {
+           ^
+/home/etudiant/workspace/projet_session/eclipse/tp3/vehiculePromenade.h:19:11: note:   candidate expects 1 argument, 2 provided
+subdir.mk:18 : la recette pour la cible « GestionImmatriculations.o » a échouée
+make: *** [GestionImmatriculations.o] Erreur 1
+13:11:13 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:11:13 **** Incremental Build of configuration Debug for project tp3 ****
+make all 
+make: rien à faire pour « all ».
+13:11:13 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+../GestionImmatriculations.cpp:17:17: error: ‘tp’ is not a namespace-name
+ using namespace tp;
+                 ^
+../GestionImmatriculations.cpp:17:19: error: expected namespace-name before ‘;’ token
+ using namespace tp;
+                   ^
+subdir.mk:18 : la recette pour la cible « GestionImmatriculations.o » a échouée
+make: *** [GestionImmatriculations.o] Erreur 1
+13:23:08 **** Incremental Build of configuration Debug for project TP3gtest ****
+make all 
+make: rien à faire pour « all ».
+13:23:09 **** Incremental Build of configuration Debug for project tp3 ****
+make all 
+make: rien à faire pour « all ».
+13:23:09 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+Finished building: ../GestionImmatriculations.cpp
+ 
+Building target: tp3_main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/projet_session/eclipse/tp3/Debug" -o "tp3_main"  ./GestionImmatriculations.o   -ltp3
+Finished building target: tp3_main
+ 
+13:23:15 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+make: rien à faire pour « all ».
+13:25:35 **** Incremental Build of configuration Debug for project tp3_main ****
+make all 
+Building file: ../GestionImmatriculations.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++98 -I"/home/etudiant/workspace/projet_session/eclipse/tp3" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"GestionImmatriculations.d" -MT"GestionImmatriculations.o" -o "GestionImmatriculations.o" "../GestionImmatriculations.cpp"
+Finished building: ../GestionImmatriculations.cpp
+ 
+Building target: tp3_main
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/workspace/projet_session/eclipse/tp3/Debug" -o "tp3_main"  ./GestionImmatriculations.o   -ltp3
+Finished building target: tp3_main
+ 

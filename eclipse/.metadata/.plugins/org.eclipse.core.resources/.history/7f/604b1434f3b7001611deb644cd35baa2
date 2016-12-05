@@ -1,0 +1,108 @@
+/**
+* \file GestionImmatriculations.cpp
+* \brief Petit programme interactif de gestion de vehicule
+* \author Antoine Bouchard
+* \version 0.0.1-alpha
+* \date 10/19/2016
+*/
+
+#include <iostream>
+#include <vector>
+#include <map>
+#include "vehiculePromenade.h"
+#include "Camion.h"
+#include "Proprietaire.h"
+#include "validation/validationFormat.h"
+
+
+using namespace std;
+using namespace tp;
+
+/**
+ * \brief Obtient ("get") le choix du menu selectione
+ */
+int getInput();
+
+
+
+int main() {
+	string nom;
+	string prenom;
+	string niv1;
+	string niv2;
+	string immat1;
+	int nbPlaces = 0;
+	Proprietaire *proprietaire;
+	cout << "Votre nom: "<<endl;
+	cin >> nom;
+	cout << "Votre prenom: "<<endl;
+	cin >> prenom;
+	if(nom.empty() || prenom.empty()){
+		cout << "Nom et prenom ne peunvent pas etre vide"<<endl;
+		return 1;
+	}
+	proprietaire = new Proprietaire(nom, prenom);
+
+	cout<< "Information pour le vehicule de promenade: "<<endl;
+	cout << "Entrez le NIV : "<< endl;
+	cin >> niv1;
+	if(!util::validerNiv(niv1)){
+		cout << "Niv invalide veuillez recommencer"<< endl;
+		return 1;
+	}
+	cout << "Entrez le numero d'immatriculation: "<<endl;
+	cin >> immat1;
+
+	if(!util::validationImmatriculationPromenade(immat1)){
+		cout << "Immatriculation invalide veuillez recommencer"<< endl;
+		return 1;
+	}
+
+	cout << "Entrez le nombre de place (superieure a 0): "<<endl;
+		cin >> nbPlaces;
+
+	if(nbPlaces <= 0){
+		cout << "Nombre de place doit etre supperieure a 0"<<endl;
+		return 1;
+	}
+
+	vehicule::VehiculePromenade vehiculePromenade(niv1, immat1, nbPlaces);
+
+	cout<< "Information pour le Camion: "<<endl;
+	cout << "Entrez le NIV : "<< endl;
+	cin >> niv1;
+	if(!util::validerNiv(niv1)){
+		cout << "Niv invalide veuillez recommencer"<< endl;
+			return 1;
+		}
+	cout << "Entrez le numero d'immatriculation: "<<endl;
+	cin >> immat1;
+
+	if(!util::validationImmatriculationCamion(immat1)){
+		cout << "Immatriculation invalide veuillez recommencer"<< endl;
+		return 1;
+	}
+	int poids = 0;
+	cout << "Entrez le poids du camion (doit etre superieur a 3001)"<<endl;
+	cin >> poids;
+
+	if(poids < 3001){
+		cout << "Poids invalide"<<endl;
+		return 1;
+	}
+	int nbEssieux = 0;
+	cout << "Entrez le nombre d'essieux du camion (doit etre superieur ou egale a 2)"<<endl;
+	cin >> nbEssieux;
+
+	if(nbEssieux < 2){
+		cout << "nombre essieux invalide"<<endl;
+		return 1;
+	}
+	vehicule::Camion camion(niv1, immat1, poids, nbEssieux);
+
+	proprietaire->ajouterVehicule(vehiculePromenade);
+	proprietaire->ajouterVehicule(camion);
+	cout << "affichage des informations du proprietaire" << endl;
+	cout << proprietaire->reqProprietaireFormate()<<endl
+    return 0;
+}
